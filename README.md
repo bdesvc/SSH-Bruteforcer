@@ -1,3 +1,3 @@
-# VPS-Hijack
-Simple SSH Bruteforcer using Paramiko
+# SSH-BRUTEFORCE
+Simple SSH Bruteforcer using Paramiko in Python 3.6
 
