@@ -37,7 +37,7 @@ def scanner():
 	with open('ips.txt') as ips:
 		for cnt,line in enumerate(ips):
 			if Check(line.strip())=="error":
-				biggest_skid = 'Kazo & Raff'
+				biggest_skid = 'Hugelock'
 			else:
 				with open('out.txt','a') as out:
 					out.write(f'{line}')
