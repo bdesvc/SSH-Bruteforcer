@@ -35,13 +35,12 @@ class SSHDevice:
 
 			print(f'{Fore.WHITE}[{Fore.GREEN}Scanner{Fore.WHITE}] {host} succeeded with {Fore.WHITE}{username}:{password}')
 		except paramiko.ssh_exception.AuthenticationException:
-			#print(f'{Fore.WHITE}[{Fore.RED}Scanner{Fore.WHITE}] {host} authentication failed')
-			laytaisa = "faggot"
+			print(f'{Fore.WHITE}[{Fore.RED}Scanner{Fore.WHITE}] {host} authentication failed')
 		except paramiko.ssh_exception.SSHException:
 			print(f'{Fore.WHITE}[{Fore.RED}Scanner{Fore.WHITE}] ?{host}? is unreachable')
 			AlreadySeen.append(host)
 		except:
-			print(f'{Fore.WHITE}[{Fore.RED}Scanner{Fore.WHITE}] {host} is unreachable2')
+			print(f'{Fore.WHITE}[{Fore.RED}Scanner{Fore.WHITE}] {host} is unreachable')
 			AlreadySeen.append(host)
 
 if len(sys.argv) == 1:
